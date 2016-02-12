@@ -1,6 +1,6 @@
-# Bieg Using Angular and Foundation
+## Bieg Using Angular and Foundation
 
-#Getting a better understanding regarding branches, features and merges. And of course be transparent.
+Getting a better understanding regarding branches, features and merges. And of course be transparent.
 
-#step1
+####step1
 Set up site using Foundation
