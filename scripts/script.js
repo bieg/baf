@@ -8,7 +8,7 @@ var myApp = angular.module('myApp', ['ngRoute','css/app.css']);
 // in this example we will create a greeting filter
 myApp.filter('greet', function() {
  return function(name) {
-    return 'Hello, ' + name + '!';
+    return 'Hello, ' + name + ' - toch !';
   };
 });
 })(window.angular);
