@@ -1,5 +1,5 @@
 <!doctype html>
-<html ng-app="myApp">
+<html>
 <head>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"></script>
     <script src="js/angular-ui-router.min.js"></script>
@@ -15,8 +15,10 @@
     </script>
 </head>
 <body>
-    <div>
-    {{ 'World' | greet }}
+    <div ng-app="myApp">
+    <p>
+        {{ 'World' | greet }}
+    </p>
   </div>
 
     <link rel="stylesheet" type="text/css" href="css/app.css">
