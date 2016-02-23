@@ -1,57 +1,56 @@
 var app = angular.module('bieg', []);
-  // app.controller('TodoListController', function() {
-  //   var todoList = this;
-  //   todoList.todos = [
-  //     {text:'learn angular', done:true},
-  //     {text:'build an angular app', done:false}];
 
-  //   todoList.addTodo = function() {
-  //     todoList.todos.push({text:todoList.todoText, done:false});
-  //     todoList.todoText = '';
-  //   };
-
-  //   todoList.remaining = function() {
-  //     var count = 0;
-  //     angular.forEach(todoList.todos, function(todo) {
-  //       count += todo.done ? 0 : 1;
-  //     });
-  //     return count;
-  //   };
-
-  //   todoList.archive = function() {
-  //     var oldTodos = todoList.todos;
-  //     todoList.todos = [];
-  //     angular.forEach(oldTodos, function(todo) {
-  //       if (!todo.done) todoList.todos.push(todo);
-  //     });
-  //   };
-  // });
+app.directive('ngModals', function() {
+  return {
+    restrict: 'A',
+    transclude: true,
+    templateUrl: 'templates/modals.html'
+}});
 
 app.directive('ngMobile', function() {
   return {
     restrict: 'A',
     transclude: true,
-    templateUrl: 'templates/mobile.html'  }
-});
-
+    templateUrl: 'templates/mobile.html'
+}});
 
 app.directive('ngClients', function() {
   return {
     restrict: 'A',
     transclude: true,
-    templateUrl: 'templates/clients.html'  }
-});
+    templateUrl: 'templates/clients.html'
+}});
 
-// app.directive('ngWork', function() {
-//   return {
-//     restrict: 'A',
-//     transclude: true,
-//     templateUrl: 'templates/work.html'  }
-// });
-
-app.directive('ngAbouthim', function() {
+app.directive('ngWork', function() {
   return {
     restrict: 'A',
     transclude: true,
-    templateUrl: 'templates/about-him.html'  }
-});
+    templateUrl: 'templates/work.html'
+}});
+
+  // app.directive('ngAbout', function() {
+
+  //   function aboutController() {};
+
+  //   var directive = {
+  //     restrict: 'EA',
+  //     scope: {},
+  //     bindToController: {
+  //       ngAbout : '@'
+  //     },
+  //     transclude: true,
+  //     replace: true,
+  //     controller: aboutController(),
+  //     controllerAs: 'ngAbout',
+  //     templateUrl: 'templates/about-him.html'
+  //   };
+  // });
+
+
+
+app.directive('ngAboutHim', function() {
+  return {
+    restrict: 'A',
+    transclude: true,
+    templateUrl: 'templates/about-him.html'
+}});

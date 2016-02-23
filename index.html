@@ -9,6 +9,8 @@
 
     <title>Wouter Biegstraaten</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+    <script src="https://cdn.firebase.com/v0/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/angularfire/0.5.0-rc1/angularfire.js"></script>
 
     <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Lekton:400,700' rel='stylesheet' type='text/css'>
@@ -24,29 +26,13 @@
 
   <div ng-mobile></div>
 
-  <!--     <div ng-controller="TodoListController as todoList">
-      <span>{{todoList.remaining()}} of {{todoList.todos.length}} remaining</span>
-      [ <a href="" ng-click="todoList.archive()">archive</a> ]
-      <ul class="unstyled">
-        <li ng-repeat="todo in todoList.todos">
-          <label class="checkbox">
-            <input type="checkbox" ng-model="todo.done">
-            <span class="done-{{todo.done}}">{{todo.text}}</span>
-          </label>
-        </li>
-      </ul>
-      <form ng-submit="todoList.addTodo()">
-        <input type="text" ng-model="todoList.todoText"  size="30"
-               placeholder="add new todo here">
-        <input class="btn-primary" type="submit" value="add">
-      </form>
-    </div> -->
-
   <div ng-clients></div>
 
+  <div ng-work></div>
 
-  <div ng-abouthim></div>
+  <div ng-about-him></div>
 
+  <div ng-modals></div>
 
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script src="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
